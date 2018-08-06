@@ -1,0 +1,153 @@
+<?xml version="1.0" ?>
+<UniversalRadioHackerProject broadcast_address_hex="ffff" collapse_project_tabs="0" description="Eco-Worthy DC Motor Controller" modulation_was_edited="0">
+  <modulators>
+    <modulator carrier_amplitude="1.0" carrier_freq_hz="40000.0" carrier_phase_deg="0.0" gauss_bt="0.5" gauss_filter_width="1.0" index="0" modulation_type="0" name="Modulator" param_for_one="100.0" param_for_zero="0.0" sample_rate="None" samples_per_bit="100"/>
+  </modulators>
+  <device_conf>
+    <bandwidth>1000000.0</bandwidth>
+    <freq_correction>1</freq_correction>
+    <frequency>433920000.0</frequency>
+    <gain>20.0</gain>
+    <name>USRP</name>
+    <num_sending_repeats>0</num_sending_repeats>
+    <rx_antenna_index>-1.0</rx_antenna_index>
+    <rx_baseband_gain>20.0</rx_baseband_gain>
+    <rx_gain>50.0</rx_gain>
+    <rx_if_gain>20.0</rx_if_gain>
+    <sample_rate>1000000.0</sample_rate>
+    <tx_antenna_index>-1</tx_antenna_index>
+    <tx_baseband_gain>20</tx_baseband_gain>
+    <tx_gain>50</tx_gain>
+    <tx_if_gain>20</tx_if_gain>
+  </device_conf>
+  <simulator_rx_conf/>
+  <simulator_tx_conf/>
+  <signal auto_detect_on_modulation_changed="False" bit_length="545" filename="USRP-433_920MHz-1MSps-1MHz-buttona.complex" message_length_divisor="1" modulation_type="0" name="USRP-433_920MHz-1MSps-1MHz-buttona" noise_maximum="0.0019" noise_minimum="-0.0019" noise_threshold="0.0019" pause_threshold="8" qad_center="0.07947235554456711" sample_rate="1000000.0" tolerance="5">
+    <messages/>
+  </signal>
+  <open_file name="USRP-433_920MHz-1MSps-1MHz-buttona.complex" position="0"/>
+  <signal auto_detect_on_modulation_changed="False" bit_length="530" filename="USRP-433_920MHz-1MSps-1MHz-buttonb.complex" message_length_divisor="1" modulation_type="0" name="USRP-433_920MHz-1MSps-1MHz-buttonb" noise_maximum="0.002" noise_minimum="-0.002" noise_threshold="0.002" pause_threshold="8" qad_center="0.09673868864774704" sample_rate="1000000.0" tolerance="5">
+    <messages/>
+  </signal>
+  <open_file name="USRP-433_920MHz-1MSps-1MHz-buttonb.complex" position="1"/>
+  <signal auto_detect_on_modulation_changed="False" bit_length="530" filename="USRP-433_920MHz-1MSps-1MHz-buttonc.complex" message_length_divisor="1" modulation_type="0" name="USRP-433_920MHz-1MSps-1MHz-buttonc" noise_maximum="0.0023" noise_minimum="-0.0023" noise_threshold="0.0023" pause_threshold="8" qad_center="0.07812206447124481" sample_rate="1000000.0" tolerance="5">
+    <messages/>
+  </signal>
+  <open_file name="USRP-433_920MHz-1MSps-1MHz-buttonc.complex" position="2"/>
+  <signal auto_detect_on_modulation_changed="False" bit_length="530" filename="USRP-433_920MHz-1MSps-1MHz-buttond.complex" message_length_divisor="1" modulation_type="0" name="USRP-433_920MHz-1MSps-1MHz-buttond" noise_maximum="0.002" noise_minimum="-0.002" noise_threshold="0.002" pause_threshold="8" qad_center="0" sample_rate="1000000.0" tolerance="5">
+    <messages/>
+  </signal>
+  <open_file name="USRP-433_920MHz-1MSps-1MHz-buttond.complex" position="3"/>
+  <group id="0" name="New Group">
+    <cf_protocol filename="USRP-433_920MHz-1MSps-1MHz-buttona.complex"/>
+    <cf_protocol filename="USRP-433_920MHz-1MSps-1MHz-buttonb.complex"/>
+    <cf_protocol filename="USRP-433_920MHz-1MSps-1MHz-buttonc.complex"/>
+    <cf_protocol filename="USRP-433_920MHz-1MSps-1MHz-buttond.complex"/>
+  </group>
+  <protocol>
+    <decodings>
+      <decoding>'Non Return To Zero (NRZ)', </decoding>
+      <decoding>'Non Return To Zero Inverted (NRZ-I)', 'Invert', </decoding>
+      <decoding>'Manchester I', 'Edge Trigger', </decoding>
+      <decoding>'Manchester II', 'Edge Trigger', 'Invert', </decoding>
+      <decoding>'Differential Manchester', 'Edge Trigger', 'Differential Encoding', </decoding>
+    </decodings>
+    <participants>
+      <participant address_hex="" color_index="0" id="be7293f5-6cc2-4f1c-b389-4366d069369e" name="Alice" relative_rssi="0" shortname="A" simulate="0"/>
+    </participants>
+    <messages>
+      <message decoding_index="0" message_type_id="13db68e7-3d60-4cec-9d32-0efce1d8fe24" modulator_index="0" pause="14472" timestamp="1533588620.2500825"/>
+      <message decoding_index="0" message_type_id="13db68e7-3d60-4cec-9d32-0efce1d8fe24" modulator_index="0" pause="14691" timestamp="1533588620.2501204"/>
+      <message decoding_index="0" message_type_id="13db68e7-3d60-4cec-9d32-0efce1d8fe24" modulator_index="0" pause="14491" timestamp="1533588620.250148"/>
+      <message decoding_index="0" message_type_id="13db68e7-3d60-4cec-9d32-0efce1d8fe24" modulator_index="0" pause="14746" timestamp="1533588620.2501757"/>
+      <message decoding_index="0" message_type_id="13db68e7-3d60-4cec-9d32-0efce1d8fe24" modulator_index="0" pause="14751" timestamp="1533588620.2501993"/>
+      <message decoding_index="0" message_type_id="13db68e7-3d60-4cec-9d32-0efce1d8fe24" modulator_index="0" pause="14754" timestamp="1533588620.2502227"/>
+      <message decoding_index="0" message_type_id="13db68e7-3d60-4cec-9d32-0efce1d8fe24" modulator_index="0" pause="14753" timestamp="1533588620.250245"/>
+      <message decoding_index="0" message_type_id="13db68e7-3d60-4cec-9d32-0efce1d8fe24" modulator_index="0" pause="14702" timestamp="1533588620.250267"/>
+      <message decoding_index="0" message_type_id="13db68e7-3d60-4cec-9d32-0efce1d8fe24" modulator_index="0" pause="14704" timestamp="1533588620.250289"/>
+      <message decoding_index="0" message_type_id="13db68e7-3d60-4cec-9d32-0efce1d8fe24" modulator_index="0" pause="14756" timestamp="1533588620.2503114"/>
+      <message decoding_index="0" message_type_id="13db68e7-3d60-4cec-9d32-0efce1d8fe24" modulator_index="0" pause="14772" timestamp="1533588620.2503328"/>
+      <message decoding_index="0" message_type_id="13db68e7-3d60-4cec-9d32-0efce1d8fe24" modulator_index="0" pause="14768" timestamp="1533588620.2503543"/>
+      <message decoding_index="0" message_type_id="13db68e7-3d60-4cec-9d32-0efce1d8fe24" modulator_index="0" pause="14773" timestamp="1533588620.2503757"/>
+      <message decoding_index="0" message_type_id="13db68e7-3d60-4cec-9d32-0efce1d8fe24" modulator_index="0" pause="14776" timestamp="1533588620.2503967"/>
+      <message decoding_index="0" message_type_id="13db68e7-3d60-4cec-9d32-0efce1d8fe24" modulator_index="0" pause="14781" timestamp="1533588620.2504182"/>
+      <message decoding_index="0" message_type_id="13db68e7-3d60-4cec-9d32-0efce1d8fe24" modulator_index="0" pause="14586" timestamp="1533588620.2504396"/>
+      <message decoding_index="0" message_type_id="13db68e7-3d60-4cec-9d32-0efce1d8fe24" modulator_index="0" pause="20962" timestamp="1533588620.250461"/>
+      <message decoding_index="0" message_type_id="13db68e7-3d60-4cec-9d32-0efce1d8fe24" modulator_index="0" pause="14551" timestamp="1533588798.583092"/>
+      <message decoding_index="0" message_type_id="13db68e7-3d60-4cec-9d32-0efce1d8fe24" modulator_index="0" pause="14419" timestamp="1533588798.58315"/>
+      <message decoding_index="0" message_type_id="13db68e7-3d60-4cec-9d32-0efce1d8fe24" modulator_index="0" pause="14458" timestamp="1533588798.5831947"/>
+      <message decoding_index="0" message_type_id="13db68e7-3d60-4cec-9d32-0efce1d8fe24" modulator_index="0" pause="14636" timestamp="1533588798.583234"/>
+      <message decoding_index="0" message_type_id="13db68e7-3d60-4cec-9d32-0efce1d8fe24" modulator_index="0" pause="14482" timestamp="1533588798.5832705"/>
+      <message decoding_index="0" message_type_id="13db68e7-3d60-4cec-9d32-0efce1d8fe24" modulator_index="0" pause="14229" timestamp="1533588798.5833058"/>
+      <message decoding_index="0" message_type_id="13db68e7-3d60-4cec-9d32-0efce1d8fe24" modulator_index="0" pause="14220" timestamp="1533588798.5833416"/>
+      <message decoding_index="0" message_type_id="13db68e7-3d60-4cec-9d32-0efce1d8fe24" modulator_index="0" pause="14320" timestamp="1533588798.5833762"/>
+      <message decoding_index="0" message_type_id="13db68e7-3d60-4cec-9d32-0efce1d8fe24" modulator_index="0" pause="14217" timestamp="1533588798.5834112"/>
+      <message decoding_index="0" message_type_id="13db68e7-3d60-4cec-9d32-0efce1d8fe24" modulator_index="0" pause="14300" timestamp="1533588798.583446"/>
+      <message decoding_index="0" message_type_id="13db68e7-3d60-4cec-9d32-0efce1d8fe24" modulator_index="0" pause="14345" timestamp="1533588798.5834804"/>
+      <message decoding_index="0" message_type_id="13db68e7-3d60-4cec-9d32-0efce1d8fe24" modulator_index="0" pause="14735" timestamp="1533588798.5835145"/>
+      <message decoding_index="0" message_type_id="13db68e7-3d60-4cec-9d32-0efce1d8fe24" modulator_index="0" pause="14761" timestamp="1533588798.5835488"/>
+      <message decoding_index="0" message_type_id="13db68e7-3d60-4cec-9d32-0efce1d8fe24" modulator_index="0" pause="14716" timestamp="1533588798.5835829"/>
+      <message decoding_index="0" message_type_id="13db68e7-3d60-4cec-9d32-0efce1d8fe24" modulator_index="0" pause="14764" timestamp="1533588798.5836167"/>
+      <message decoding_index="0" message_type_id="13db68e7-3d60-4cec-9d32-0efce1d8fe24" modulator_index="0" pause="14768" timestamp="1533588798.5836508"/>
+      <message decoding_index="0" message_type_id="13db68e7-3d60-4cec-9d32-0efce1d8fe24" modulator_index="0" pause="14444" timestamp="1533588798.5836911"/>
+      <message decoding_index="0" message_type_id="13db68e7-3d60-4cec-9d32-0efce1d8fe24" modulator_index="0" pause="14776" timestamp="1533588798.5837271"/>
+      <message decoding_index="0" message_type_id="13db68e7-3d60-4cec-9d32-0efce1d8fe24" modulator_index="0" pause="1705057" timestamp="1533588798.5837657"/>
+      <message decoding_index="0" message_type_id="13db68e7-3d60-4cec-9d32-0efce1d8fe24" modulator_index="0" pause="14530" timestamp="1533588945.2635746"/>
+      <message decoding_index="0" message_type_id="13db68e7-3d60-4cec-9d32-0efce1d8fe24" modulator_index="0" pause="14329" timestamp="1533588945.2636359"/>
+      <message decoding_index="0" message_type_id="13db68e7-3d60-4cec-9d32-0efce1d8fe24" modulator_index="0" pause="14734" timestamp="1533588945.2636886"/>
+      <message decoding_index="0" message_type_id="13db68e7-3d60-4cec-9d32-0efce1d8fe24" modulator_index="0" pause="14413" timestamp="1533588945.2637343"/>
+      <message decoding_index="0" message_type_id="13db68e7-3d60-4cec-9d32-0efce1d8fe24" modulator_index="0" pause="14513" timestamp="1533588945.2637715"/>
+      <message decoding_index="0" message_type_id="13db68e7-3d60-4cec-9d32-0efce1d8fe24" modulator_index="0" pause="14506" timestamp="1533588945.263808"/>
+      <message decoding_index="0" message_type_id="13db68e7-3d60-4cec-9d32-0efce1d8fe24" modulator_index="0" pause="14747" timestamp="1533588945.2638435"/>
+      <message decoding_index="0" message_type_id="13db68e7-3d60-4cec-9d32-0efce1d8fe24" modulator_index="0" pause="14757" timestamp="1533588945.263878"/>
+      <message decoding_index="0" message_type_id="13db68e7-3d60-4cec-9d32-0efce1d8fe24" modulator_index="0" pause="14758" timestamp="1533588945.2639134"/>
+      <message decoding_index="0" message_type_id="13db68e7-3d60-4cec-9d32-0efce1d8fe24" modulator_index="0" pause="14761" timestamp="1533588945.2639484"/>
+      <message decoding_index="0" message_type_id="13db68e7-3d60-4cec-9d32-0efce1d8fe24" modulator_index="0" pause="14761" timestamp="1533588945.2639828"/>
+      <message decoding_index="0" message_type_id="13db68e7-3d60-4cec-9d32-0efce1d8fe24" modulator_index="0" pause="14764" timestamp="1533588945.2640176"/>
+      <message decoding_index="0" message_type_id="13db68e7-3d60-4cec-9d32-0efce1d8fe24" modulator_index="0" pause="14768" timestamp="1533588945.2640548"/>
+      <message decoding_index="0" message_type_id="13db68e7-3d60-4cec-9d32-0efce1d8fe24" modulator_index="0" pause="14770" timestamp="1533588945.2640889"/>
+      <message decoding_index="0" message_type_id="13db68e7-3d60-4cec-9d32-0efce1d8fe24" modulator_index="0" pause="14773" timestamp="1533588945.264123"/>
+      <message decoding_index="0" message_type_id="13db68e7-3d60-4cec-9d32-0efce1d8fe24" modulator_index="0" pause="14774" timestamp="1533588945.2641568"/>
+      <message decoding_index="0" message_type_id="13db68e7-3d60-4cec-9d32-0efce1d8fe24" modulator_index="0" pause="14775" timestamp="1533588945.2641914"/>
+      <message decoding_index="0" message_type_id="13db68e7-3d60-4cec-9d32-0efce1d8fe24" modulator_index="0" pause="14778" timestamp="1533588945.2642257"/>
+      <message decoding_index="0" message_type_id="13db68e7-3d60-4cec-9d32-0efce1d8fe24" modulator_index="0" pause="14780" timestamp="1533588945.2642593"/>
+      <message decoding_index="0" message_type_id="13db68e7-3d60-4cec-9d32-0efce1d8fe24" modulator_index="0" pause="14785" timestamp="1533588945.2642932"/>
+      <message decoding_index="0" message_type_id="13db68e7-3d60-4cec-9d32-0efce1d8fe24" modulator_index="0" pause="14767" timestamp="1533588945.2643259"/>
+      <message decoding_index="0" message_type_id="13db68e7-3d60-4cec-9d32-0efce1d8fe24" modulator_index="0" pause="14405" timestamp="1533588945.26436"/>
+      <message decoding_index="0" message_type_id="13db68e7-3d60-4cec-9d32-0efce1d8fe24" modulator_index="0" pause="867719" timestamp="1533588945.2643936"/>
+      <message decoding_index="0" message_type_id="13db68e7-3d60-4cec-9d32-0efce1d8fe24" modulator_index="0" pause="14623" timestamp="1533588989.1579268"/>
+      <message decoding_index="0" message_type_id="13db68e7-3d60-4cec-9d32-0efce1d8fe24" modulator_index="0" pause="14732" timestamp="1533588989.1580544"/>
+      <message decoding_index="0" message_type_id="13db68e7-3d60-4cec-9d32-0efce1d8fe24" modulator_index="0" pause="14740" timestamp="1533588989.1581888"/>
+      <message decoding_index="0" message_type_id="13db68e7-3d60-4cec-9d32-0efce1d8fe24" modulator_index="0" pause="14746" timestamp="1533588989.1583028"/>
+      <message decoding_index="0" message_type_id="13db68e7-3d60-4cec-9d32-0efce1d8fe24" modulator_index="0" pause="14747" timestamp="1533588989.1583903"/>
+      <message decoding_index="0" message_type_id="13db68e7-3d60-4cec-9d32-0efce1d8fe24" modulator_index="0" pause="14750" timestamp="1533588989.15847"/>
+      <message decoding_index="0" message_type_id="13db68e7-3d60-4cec-9d32-0efce1d8fe24" modulator_index="0" pause="14707" timestamp="1533588989.158565"/>
+      <message decoding_index="0" message_type_id="13db68e7-3d60-4cec-9d32-0efce1d8fe24" modulator_index="0" pause="14723" timestamp="1533588989.1586618"/>
+      <message decoding_index="0" message_type_id="13db68e7-3d60-4cec-9d32-0efce1d8fe24" modulator_index="0" pause="14764" timestamp="1533588989.158751"/>
+      <message decoding_index="0" message_type_id="13db68e7-3d60-4cec-9d32-0efce1d8fe24" modulator_index="0" pause="14739" timestamp="1533588989.158828"/>
+      <message decoding_index="0" message_type_id="13db68e7-3d60-4cec-9d32-0efce1d8fe24" modulator_index="0" pause="14769" timestamp="1533588989.1589122"/>
+      <message decoding_index="0" message_type_id="13db68e7-3d60-4cec-9d32-0efce1d8fe24" modulator_index="0" pause="14771" timestamp="1533588989.159013"/>
+      <message decoding_index="0" message_type_id="13db68e7-3d60-4cec-9d32-0efce1d8fe24" modulator_index="0" pause="14775" timestamp="1533588989.159113"/>
+      <message decoding_index="0" message_type_id="13db68e7-3d60-4cec-9d32-0efce1d8fe24" modulator_index="0" pause="14774" timestamp="1533588989.159241"/>
+      <message decoding_index="0" message_type_id="13db68e7-3d60-4cec-9d32-0efce1d8fe24" modulator_index="0" pause="14693" timestamp="1533588989.1593542"/>
+      <message decoding_index="0" message_type_id="13db68e7-3d60-4cec-9d32-0efce1d8fe24" modulator_index="0" pause="14672" timestamp="1533588989.1594408"/>
+      <message decoding_index="0" message_type_id="13db68e7-3d60-4cec-9d32-0efce1d8fe24" modulator_index="0" pause="14707" timestamp="1533588989.159529"/>
+      <message decoding_index="0" message_type_id="13db68e7-3d60-4cec-9d32-0efce1d8fe24" modulator_index="0" pause="14782" timestamp="1533588989.1596284"/>
+      <message decoding_index="0" message_type_id="13db68e7-3d60-4cec-9d32-0efce1d8fe24" modulator_index="0" pause="14743" timestamp="1533588989.1597476"/>
+      <message decoding_index="0" message_type_id="13db68e7-3d60-4cec-9d32-0efce1d8fe24" modulator_index="0" pause="14790" timestamp="1533588989.1598258"/>
+      <message decoding_index="0" message_type_id="13db68e7-3d60-4cec-9d32-0efce1d8fe24" modulator_index="0" pause="14789" timestamp="1533588989.1599495"/>
+      <message decoding_index="0" message_type_id="13db68e7-3d60-4cec-9d32-0efce1d8fe24" modulator_index="0" pause="14790" timestamp="1533588989.1600437"/>
+      <message decoding_index="0" message_type_id="13db68e7-3d60-4cec-9d32-0efce1d8fe24" modulator_index="0" pause="14796" timestamp="1533588989.1601195"/>
+      <message decoding_index="0" message_type_id="13db68e7-3d60-4cec-9d32-0efce1d8fe24" modulator_index="0" pause="9164" timestamp="1533588989.16019"/>
+      <message decoding_index="0" message_type_id="13db68e7-3d60-4cec-9d32-0efce1d8fe24" modulator_index="0" pause="874732" timestamp="1533588989.1602516"/>
+    </messages>
+    <message_types>
+      <message_type assigned_by_logic_analyzer="0" assigned_by_ruleset="0" id="13db68e7-3d60-4cec-9d32-0efce1d8fe24" name="default">
+        <ruleset mode="0"/>
+      </message_type>
+    </message_types>
+  </protocol>
+  <simulator_config>
+    <items/>
+  </simulator_config>
+</UniversalRadioHackerProject>
